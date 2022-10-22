@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+
+.title {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 6rem;
+    font-style: bold;
+}
+
+.section-one {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    width: 70vw;
+}
+
+.section-one div {
+    border-style: solid;
+    border-radius: 10%;
+    height: 100vh;
+}
+
+.Dog-Image {
+    /*background-size: cover;*/
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+}
+
+.change-button {
+    width: 10rem;
+    height: 5rem;
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-style: bold;
+    font-size: 1.5rem;
+    align-self: center;
+    background-color: aqua;
+    border-style: solid;
+    border-color:blue;
+    border-radius: 15%;
+}
