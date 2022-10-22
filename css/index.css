@@ -19,16 +19,23 @@ html {
 .section-one {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 10rem;
     margin: 0 auto;
-    margin-top: 2rem;
-    width: 60vw;
+    margin-top: 5rem;
+    width: 95vw;
 }
 
-.section-one div {
+.imgs-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.img-container {
     border-style: solid;
     border-radius: 10%;
-    height: 75vh;
+    width: 32%;
+    height: 30vh;
 }
 
 .Dog-Image {

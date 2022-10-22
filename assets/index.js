@@ -1,6 +1,6 @@
 //const DOG_API = 'https://api.thecatapi.com/v1/images/search';
 const DOG_API = 'https://api.thedogapi.com/v1/images/search';
-const imgContainer = document.getElementById('img-container');
+const LIMIT = 3;
 const button = document.getElementById('');
 
 const fetchData = async urlApi => {
@@ -11,10 +11,13 @@ const fetchData = async urlApi => {
 
 const asignDogPhoto = async () => {
     try {
-        const dogData = await fetchData(DOG_API);
-        imgContainer.innerHTML = `
-            <img id="Dog-Image" class="Dog-Image" src="${dogData[0].url}" alt="Cat Random Picture">
-        `
+        const dogData = await fetchData(`${DOG_API}/?limit=${LIMIT}`);
+        dogData.forEach((element, index) => {
+            document.getElementById(`img-container${index+1}`)
+                .innerHTML = `
+                    <img id="Dog-Image" class="Dog-Image" src="${element.url}" alt="Cat Random Picture">
+                `   
+        }); 
     } catch (error) {
         console.error(error);
     }
