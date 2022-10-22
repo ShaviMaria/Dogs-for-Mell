@@ -22,13 +22,13 @@ html {
     gap: 2rem;
     margin: 0 auto;
     margin-top: 2rem;
-    width: 70vw;
+    width: 60vw;
 }
 
 .section-one div {
     border-style: solid;
     border-radius: 10%;
-    height: 100vh;
+    height: 75vh;
 }
 
 .Dog-Image {
