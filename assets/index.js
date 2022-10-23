@@ -1,8 +1,7 @@
 //const CAT_API = 'https://api.thecatapi.com/v1/images/search';
 const DOG_API = 'https://api.thedogapi.com/v1/images/search';
 const DOG_API_KEY = 'live_PMi8BLxFPYAnCgsqmXleBgJkXw2R92PqxaWbPzdSIcETYlcEsmDYTfyDGzfc1epH';
-const LIMIT = 3;
-const button = document.getElementById('');
+const LIMIT = 6;
 
 const fetchData = async urlApi => {
     const response = await fetch(urlApi);
